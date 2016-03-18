@@ -113,6 +113,7 @@ public class MainActivity extends Activity {
             googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
                 @Override
                 public void onMapClick(final LatLng latLng) {
+                    progressBar.setVisibility(View.INVISIBLE);
                     progressBar.setVisibility(View.VISIBLE);
                     hum_presTV.setVisibility(View.INVISIBLE);
                     country_cityNameTV.setVisibility(View.INVISIBLE);
